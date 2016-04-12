@@ -7,7 +7,7 @@ while {vehicle player == player} do
 if (player in (crew (vehicle player))) then
 	{
 		FhzOfPlayer = vehicle player;
-		[FhzOfPlayer] execVM "Get_Out\TypeOfVehicle.sqf";
+		[FhzOfPlayer] execVM "Vehicle_Eject\TypeOfVehicle.sqf";
 	};
 
 while {player in crew FhzOfPlayer} do

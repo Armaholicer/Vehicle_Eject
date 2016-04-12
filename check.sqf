@@ -14,4 +14,4 @@ while {vehicle player == player} do
 	sleep 1;
 };
 
-execVM "Get_Out\check.sqf";
+execVM "Vehicle_Eject\check.sqf";
