@@ -1,7 +1,11 @@
 _dir = getDir FhzOfPlayer;
 _dirp = _dir+90;
-FhzOfPlayer animateDoor ["Door_R",1,false];
-sleep 1.8;
+
+if ((FhzOfPlayer doorPhase "Door_R") == 0) then
+{
+	FhzOfPlayer animateDoor ["Door_R",1,false];
+	sleep 1.8;
+};
 
 player allowDamage false;
 player action ["Eject",FhzOfPlayer];
