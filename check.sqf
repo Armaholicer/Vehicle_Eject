@@ -11,6 +11,9 @@ while {vehicle player == player} do
 	player removeaction IDHELI_DOORR;
 	player removeaction IDHELI_DOORL;
 	player removeaction IDHELI_DOORO;
+	player removeaction IDHELI_DOOROR;
+	player removeaction IDHELI_DOOROL;
+	player removeaction IDHELI_DOORC;
 	sleep 1;
 };
 
