@@ -9,3 +9,4 @@ TypeOfVehicle.sqf beschränkt sich vorerst auf Helikopter. Zur Bearbeitung der w
 Zum Testen im Editor: 
 Neue Mission erstellen, VR empfohlen. 
 Repository in den Missionsordner kopieren. In-Game Spieler und leere Ghost Hawk erstellen. 
+Die init.sqf aus Vehicle_Eject ausschneiden und in den Missionsordner einfügen. (Dieser in dem die mission.sqm vorhanden ist).
