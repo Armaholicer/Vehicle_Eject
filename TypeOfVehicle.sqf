@@ -38,3 +38,11 @@ if (_Vec isKindof "Helicopter") then
 	};
 	
 };
+
+if (_Vec isKindOf "Land") then
+{
+	if (_Vec isKindOf "B_MRAP_01_F") then
+	{
+		hint "geht";
+		[_Vec] execVM "Vehicle_Eject\Car_1\Car_1_check.sqf"; // BLUFOR - Hunter (unarmed) - Car 1	
+	};
