@@ -1,6 +1,6 @@
  class CfgPatches
  {
- 	class HeliGetOut
+ 	class VehicleEject
  	{
  		units[] = {};
  		weapons[] = {};

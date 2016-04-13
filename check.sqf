@@ -8,6 +8,7 @@ while {vehicle player == player} do
 {
 	player removeaction IDHELI_R;
 	player removeaction IDHELI_L;
+	player removeaction IDHELI_CR;
 	player removeaction IDHELI_DOORR;
 	player removeaction IDHELI_DOORL;
 	player removeaction IDHELI_DOORO;
