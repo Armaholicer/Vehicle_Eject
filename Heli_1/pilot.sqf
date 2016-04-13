@@ -6,7 +6,7 @@ if (player == _driver) then
 {
 	while {player == _driver} do 
 	{
-		if (((FhzOfPlayer doorPhase "Door_R") == 0) AND ((FhzOfPlayer doorPhase "Door_L") == 0) OR ((FhzOfPlayer doorPhase "Door_Back_R") == 0) AND ((FhzOfPlayer doorPhase "Door_Back_L") == 0)) then
+		if (((FhzOfPlayer doorPhase "Door_R") == 0) AND ((FhzOfPlayer doorPhase "Door_L") == 0)) then
 		{
 			player removeaction IDHELI_DOOROR;
 			player removeaction IDHELI_DOOROL;
@@ -21,7 +21,7 @@ if (player == _driver) then
 				sleep 1;
 			};
 		};
-		if (((FhzOfPlayer doorPhase "Door_R") == 1) AND ((FhzOfPlayer doorPhase "Door_L") == 1) OR ((FhzOfPlayer doorPhase "Door_Back_R") == 1) AND ((FhzOfPlayer doorPhase "Door_Back_L") == 1)) then
+		if (((FhzOfPlayer doorPhase "Door_R") == 1) AND ((FhzOfPlayer doorPhase "Door_L") == 1)) then
 		{
 			player removeaction IDHELI_DOORC;
 			IDHELI_DOORC = player addAction ["<t color='#FF0911'>Türen schließen", "Vehicle_Eject\Heli_1\close_all.sqf"];
@@ -32,7 +32,7 @@ if (player == _driver) then
 				sleep 1;
 			};
 		};
-		if (((FhzOfPlayer doorPhase "Door_R") == 1) AND ((FhzOfPlayer doorPhase "Door_L") == 0) OR ((FhzOfPlayer doorPhase "Door_Back_R") == 1) AND ((FhzOfPlayer doorPhase "Door_Back_L") == 0)) then
+		if (((FhzOfPlayer doorPhase "Door_R") == 1) AND ((FhzOfPlayer doorPhase "Door_L") == 0)) then
 		{
 			IDHELI_DOORR = player addAction ["<t color='#FF0911'>Rechte Tür schließen", "Vehicle_Eject\Heli_1\close_r.sqf"];			
 			while {((FhzOfPlayer doorPhase "Door_R") == 1) && ((FhzOfPlayer doorPhase "Door_L") == 0)} do
@@ -42,7 +42,7 @@ if (player == _driver) then
 				sleep 1;
 			};
 		};
-		if (((FhzOfPlayer doorPhase "Door_R") == 0) AND ((FhzOfPlayer doorPhase "Door_L") == 1) OR ((FhzOfPlayer doorPhase "Door_Back_R") == 0) AND ((FhzOfPlayer doorPhase "Door_Back_L") == 1))  then 
+		if (((FhzOfPlayer doorPhase "Door_R") == 0) AND ((FhzOfPlayer doorPhase "Door_L") == 1))  then 
 		{
 			IDHELI_DOORL = player addAction ["<t color='#FF0911'>Linke Tür schließen", "Vehicle_Eject\Heli_1\close_l.sqf"];
 			while {((FhzOfPlayer doorPhase "Door_R") == 0) && ((FhzOfPlayer doorPhase "Door_L") == 1)} do
