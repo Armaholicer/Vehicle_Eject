@@ -1,5 +1,7 @@
 _Vec = _this select 0;
 
+
+	
 if (_Vec isKindof "Helicopter") then
 {
 	if (_Vec isKindof "B_Heli_Transport_01_F") then
@@ -39,10 +41,21 @@ if (_Vec isKindof "Helicopter") then
 	
 };
 
-if (_Vec isKindOf "Land") then
+if (_Vec isKindOf "LandVehicle") then
 {
 	if (_Vec isKindOf "B_MRAP_01_F") then
 	{
-		hint "geht";
-		[_Vec] execVM "Vehicle_Eject\Car_1\Car_1_check.sqf"; // BLUFOR - Hunter (unarmed) - Car 1	
+		[_Vec] execVM "Vehicle_Eject\Car\Car_check.sqf"; // BLUFOR - Hunter (unarmed) - Car	
 	};
+	
+	if (_Vec isKindOf "B_MRAP_01_hmg_F") then
+	{
+		[_Vec] execVM "Vehicle_Eject\Car\Car_check.sqf"; // BLUFOR - Hunter (HMG) - Car	
+	};
+	
+	if (_Vec isKindOf "B_MRAP_01_gmg_F") then
+	{
+		[_Vec] execVM "Vehicle_Eject\Car\Car_check.sqf"; // BLUFOR - Hunter (GMG) - Car	
+	};
+
+};
