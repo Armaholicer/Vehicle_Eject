@@ -12,6 +12,7 @@ while {vehicle player == player} do
 	player removeaction IDCAR_P0;
 	player removeaction IDCAR_P1;
 	player removeaction IDCAR_P2;
+	player removeaction IDCAR_P3;
 	sleep 1;
 };
 

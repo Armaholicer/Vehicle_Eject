@@ -48,14 +48,26 @@ if (_Vec isKindOf "LandVehicle") then
 		[_Vec] execVM "Vehicle_Eject\Car\Car_check.sqf"; // BLUFOR - Hunter (unarmed) - Car	
 	};
 	
-	if (_Vec isKindOf "B_MRAP_01_hmg_F") then
+	if (_Vec isKindOf "I_MRAP_03_F") then
 	{
-		[_Vec] execVM "Vehicle_Eject\Car\Car_check.sqf"; // BLUFOR - Hunter (HMG) - Car	
+		[_Vec] execVM "Vehicle_Eject\Car\Car_check.sqf"; // GUER - Strider (unarmed) - Car	
 	};
 	
-	if (_Vec isKindOf "B_MRAP_01_gmg_F") then
+	if (_Vec isKindOf "O_MRAP_02_F") then
 	{
-		[_Vec] execVM "Vehicle_Eject\Car\Car_check.sqf"; // BLUFOR - Hunter (GMG) - Car	
+		[_Vec] execVM "Vehicle_Eject\Car\Ifrit\Car_check_ifrit.sqf"; // OPFOR - IFRIT (unarmed) - Car	
 	};
+	
+	if (_Vec isKindOf "O_MRAP_02_hmg_F") then
+	{
+		[_Vec] execVM "Vehicle_Eject\Car\Ifrit\Car_check_ifrit.sqf"; // OPFOR - IFRIT (HMG) - Car	
+	};
+	
+	if (_Vec isKindOf "O_MRAP_02_gmg_F") then
+	{
+		[_Vec] execVM "Vehicle_Eject\Car\Ifrit\Car_check_ifrit.sqf"; // OPFOR - IFRIT (GMG) - Car	
+	};
+	
+
 
 };
