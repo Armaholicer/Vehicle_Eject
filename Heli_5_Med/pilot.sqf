@@ -10,12 +10,12 @@ if (player == _driver) then
 		{
 			player removeAction IDHELI_DOORL;
 			player removeAction IDHELI_DOOROL;
-			IDHELI_DOORL = player addAction ["<t color='#FF0911'>Linke Tür öffnen", "Vehicle_Eject\Heli_5_Med\openl.sqf"];
+			IDHELI_DOOROL = player addAction ["<t color='#FF0911'>Linke Tür öffnen", "Vehicle_Eject\Heli_5_Med\openl.sqf"];
 			while {((FhzOfPlayer doorPhase "Door_4_source") == 0)} do
 			{
 				//nichts
 				execVM "Vehicle_Eject\check.sqf";
-			sleep 1;
+				sleep 1;
 			};
 		};
 		if ((FhzOfPlayer doorPhase "Door_4_source") == 1)  then 
@@ -27,7 +27,7 @@ if (player == _driver) then
 			{
 				//nichts
 				execVM "Vehicle_Eject\check.sqf";
-			sleep 1;
+				sleep 1;
 			};
 		};
 		sleep 1;
